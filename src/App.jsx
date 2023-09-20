@@ -11,12 +11,12 @@ import {
  } from "./sections/index";
 
 const App = () => (
-  <main className="relative">
+  <main id="Nav" className="relative">
     <Nav />
-    <section className="xl:padding-1 wide:padding-r padding-b">
+    <section id="Hero" className="xl:padding-l wide:padding-r padding-b">
       <Hero />
     </section>
-    <section className="padding">
+    <section id="PopularProducts" className="padding">
       <PopularProducts />
     </section>
     <section className="padding">
