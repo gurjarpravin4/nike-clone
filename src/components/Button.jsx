@@ -2,7 +2,8 @@ import React from 'react'
 
 const Button = (props) => {
   return (
-    <button className='flex justify-center items-center gap-2 px-7 py-4 border-coral-red font-montserrat text-lg leading-none bg-coral-red rounded-full text-white'>
+    <button className={`flex justify-center items-center gap-2 px-7 py-4 font-montserrat text-lg leading-none rounded-full
+     ${props.backgroundColor ? `${props.borderColor} ${props.backgroundColor} ${props.textColor}` : 'border-coral-red bg-coral-red text-white'}`}>
       {props.label}
       {props.iconURL && <img src={props.iconURL} alt="arrow-right" className='ml-2 rounded-full w-5 h-5'/>}
     </button>
